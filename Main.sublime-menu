@@ -1,0 +1,37 @@
+[
+    {
+        "id": "preferences",
+        "children":
+        [
+            {
+                "caption": "Package Settings",
+                "id": "package-settings",
+                "children":
+                [
+                    {
+                        "caption": "Open in Browser",
+                        "children":
+                        [
+                            {
+                                "caption": "Open in Browser Settings – Default",
+                                "command": "open_file",
+                                "args":
+                                {
+                                    "file": "${packages}/Browser/browser_open.sublime-settings"
+                                }
+                            },
+                            {
+                                "caption": "Open in Browser Settings – User",
+                                "command": "open_file",
+                                "args":
+                                {
+                                    "file": "${packages}/User/browser_open.sublime-settings"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]
