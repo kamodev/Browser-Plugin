@@ -2,10 +2,14 @@ import sublime
 import sublime_plugin
 import webbrowser
 import os
+import sys
+import platform
+
 
 # Constant of settings file
 SETTINGS = "browser.sublime-settings"
 
+# All the global functions
 def saveFile():
     sublime.active_window().run_command('save')
     print "\n\nSaved chages to the current file"
@@ -22,20 +26,19 @@ def getExtList():
 
 class OpenInNewBrowserWindowCommand(sublime_plugin.TextCommand):
   def run(self, edit):
-    
+
     # Save the changes to the browser
     saveFile()
 
     # Get the domain to open
     for title, domain in getDomainConfig().items():
         url = domain + getFileName(self)
-    
+
     # Check to see if the file can be displayed in the browser
     if self.view.file_name().endswith(getExtList()):
         webbrowser.open(url)
     else:
         print "\nThis is not a browsable file\n"
-
 
 class OpenInNewTabCommand(sublime_plugin.TextCommand):
   def run(self, edit):
@@ -46,7 +49,7 @@ class OpenInNewTabCommand(sublime_plugin.TextCommand):
     # Get the domain to open
     for title, domain in getDomainConfig().items():
         url = domain + getFileName(self)
-    
+
     # Check to see if the file can be displayed in the browser
     if self.view.file_name().endswith(getExtList()):
         webbrowser.open_new_tab(url)
