@@ -1,7 +1,7 @@
 import sublime, sublime_plugin
 import webbrowser, os
 
-SETTINGS = "browser_open.sublime-settings"
+SETTINGS = "browser.sublime-settings"
 
 class OpenInNewBrowserWindowCommand(sublime_plugin.TextCommand):
   def run(self, edit):
