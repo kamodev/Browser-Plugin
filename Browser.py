@@ -1,23 +1,37 @@
-import sublime, sublime_plugin
-import webbrowser, os
+import sublime
+import sublime_plugin
+import webbrowser
+import os
 
+# Constant of settings file
 SETTINGS = "browser.sublime-settings"
 
-class OpenInNewBrowserWindowCommand(sublime_plugin.TextCommand):
-  def run(self, edit):
-
-    # The settings for the plugin
-    config = sublime.load_settings(SETTINGS).get('domains', {})
-        
-    # Save the file
+def saveFile():
     sublime.active_window().run_command('save')
     print "\n\nSaved chages to the current file"
 
-    #url = "http://10.10.10.12/mobile/"
-    for title, domain in config.items():
-        url = domain + self.view.file_name()[16:len(self.view.file_name())]
+def getDomainConfig():
+    return sublime.load_settings(SETTINGS).get('domains', {})
+
+def getFileName(self):
+    return self.view.file_name()[16:len(self.view.file_name())]
+
+def getExtList():
+    return ('.php','.html','.htm','.jsp','.cfm','.aspx','.asp','.xhtml')
+
+
+class OpenInNewBrowserWindowCommand(sublime_plugin.TextCommand):
+  def run(self, edit):
     
-    if self.view.file_name().endswith(('.php','.html','.htm','.jsp','.cfm','.aspx','.asp','.xhtml')):
+    # Save the changes to the browser
+    saveFile()
+
+    # Get the domain to open
+    for title, domain in getDomainConfig().items():
+        url = domain + getFileName(self)
+    
+    # Check to see if the file can be displayed in the browser
+    if self.view.file_name().endswith(getExtList()):
         webbrowser.open(url)
     else:
         print "\nThis is not a browsable file\n"
@@ -25,18 +39,16 @@ class OpenInNewBrowserWindowCommand(sublime_plugin.TextCommand):
 
 class OpenInNewTabCommand(sublime_plugin.TextCommand):
   def run(self, edit):
-    # The settings for the plugin
-    config = sublime.load_settings(SETTINGS).get('domains', {})
 
-    # Save the file
-    sublime.active_window().run_command('save')
-    print "\n\nSaved chages to the current file"
+    # Save the changes to the browser
+    saveFile()
 
-    #url = "http://10.10.10.12/mobile/"
-    for title, domain in config.items():
-        url = domain + self.view.file_name()[16:len(self.view.file_name())]
+    # Get the domain to open
+    for title, domain in getDomainConfig().items():
+        url = domain + getFileName(self)
     
-    if self.view.file_name().endswith(('.php','.html','.htm','.jsp','.cfm','.aspx','.asp','.xhtml')):
+    # Check to see if the file can be displayed in the browser
+    if self.view.file_name().endswith(getExtList()):
         webbrowser.open_new_tab(url)
     else:
         print "\nThis is not a browsable file\n"

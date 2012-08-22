@@ -33,5 +33,19 @@
                 ]
             }
         ]
+    },
+    {
+        "id": "tools",
+        "children":
+        [
+            {
+                "caption": "Open in new Browser",
+                "command": "open_in_new_browser_window"
+            },
+            {
+                "caption": "Open in new Browser tab",
+                "command": "open_in_new_tab"                
+            }          
+        ]
     }
 ]
