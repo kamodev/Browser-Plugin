@@ -9,7 +9,7 @@
                 "children":
                 [
                     {
-                        "caption": "Open in Browser",
+                        "caption": "Browser",
                         "children":
                         [
                             {
@@ -17,7 +17,7 @@
                                 "command": "open_file",
                                 "args":
                                 {
-                                    "file": "${packages}/Browser/browser_open.sublime-settings"
+                                    "file": "${packages}/Browser/browser.sublime-settings"
                                 }
                             },
                             {
@@ -25,7 +25,7 @@
                                 "command": "open_file",
                                 "args":
                                 {
-                                    "file": "${packages}/User/browser_open.sublime-settings"
+                                    "file": "${packages}/User/browser.sublime-settings"
                                 }
                             }
                         ]
@@ -44,8 +44,8 @@
             },
             {
                 "caption": "Open in new Browser tab",
-                "command": "open_in_new_tab"                
-            }          
+                "command": "open_in_new_tab"
+            }
         ]
     }
 ]

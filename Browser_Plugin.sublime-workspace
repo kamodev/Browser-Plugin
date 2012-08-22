@@ -1,0 +1,402 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"import",
+				"important"
+			],
+			[
+				"n",
+				":nth-child(|)"
+			],
+			[
+				"m",
+				"margin"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"IN",
+				"Insured"
+			],
+			[
+				"_",
+				"_iframeHeight"
+			],
+			[
+				"email",
+				"emailHistory"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"data",
+				"dataTable"
+			],
+			[
+				"cone",
+				"console"
+			],
+			[
+				"te",
+				"text"
+			],
+			[
+				"da",
+				"dataTable"
+			],
+			[
+				"vid",
+				"vidType"
+			],
+			[
+				"h",
+				"height"
+			],
+			[
+				"moda",
+				"modalHTML"
+			],
+			[
+				"for",
+				"form"
+			],
+			[
+				"selected",
+				"selectedVidType"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "Main.sublime-menu",
+			"settings":
+			{
+				"buffer_size": 1576,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Set Syntax: HTML(",
+				"Set Syntax: HTML (ASP)"
+			],
+			[
+				"",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: Instal",
+				"Package Control: Install Package"
+			],
+			[
+				"Package",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: In",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: R",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Create Binary Package File"
+			],
+			[
+				"Pac",
+				"Package Control: Install Package"
+			],
+			[
+				"Pak",
+				"Package Control: List Packages"
+			],
+			[
+				"Pa",
+				"Package Control: Install Package"
+			],
+			[
+				"Pack",
+				"Package Control: Install Package"
+			],
+			[
+				"P",
+				"Package Control: Install Package"
+			],
+			[
+				"fet",
+				"Fetch"
+			],
+			[
+				"Net",
+				"Bookmarks: Select Next"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/SVN/AuctivaCommerce/AucCom10035/Website/App_Themes/Stripes_Green_v2/style.css",
+		"/C/SVN/AuctivaCommerce/AucCom10035/Website/App_Themes/Stripes_Orange_v2/style.css",
+		"/C/SVN/AuctivaCommerce/AucCom10035/Website/App_Themes/Stripes_Red_v2/style.css",
+		"/C/SVN/AuctivaCommerce/AucCom10035/Website/App_Themes/Stripes_Black_v2/style.css",
+		"/C/SVN/AuctivaCommerce/AucCom10035/Website/App_Themes/Stadium_Green_v2/style.css",
+		"/C/SVN/AuctivaCommerce/AucCom10035/Website/App_Themes/Search_Brown_on_Green_v2/style.css",
+		"/C/SVN/AuctivaCommerce/AucCom10035/Website/App_Themes/Smoothie_Green_v2/style.css",
+		"/C/SVN/AuctivaCommerce/AucCom10035/Website/App_Themes/Spectrum_Spectrum_v2/style.css",
+		"/C/SVN/AuctivaCommerce/AucCom10035/Website/App_Themes/Rustic_Red_v2/style.css",
+		"/C/SVN/AuctivaCommerce/AucCom10035/Website/App_Themes/Platform_Aqua_v2/style.css",
+		"/C/SVN/AuctivaCommerce/AucCom10035/Website/App_Themes/Mobile_Gray_v2/mobile.css",
+		"/C/SVN/AuctivaCommerce/AucCom10035/Website/web.config",
+		"/C/SVN/AuctivaCommerce/AucCom10035/Website/App_Themes/Portland_Yellow_v2/style.css",
+		"/C/SVN/AuctivaCommerce/AucCom10035/Website/App_Themes/Chromatic_Blue_v2/style.css",
+		"/C/SVN/AuctivaCommerce/AucCom10035/Website/App_Themes/Harvest_Blue_v2/style.css",
+		"/C/SVN/AuctivaCommerce/AucCom10035/Website/App_Themes/Parchment_Brown_v2/style.css",
+		"/C/Users/jbagula/AppData/Roaming/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/SVN/AuctivaCommerce/AucCom10035/Website/App_Themes/Blank_White_v2/style.css",
+		"/C/FreetivaSettings.ini",
+		"/C/SVN/AuctivaCommerce/AucCom10035/Website/App_Themes/Arrow_Brown_on_Green_v2/style.css",
+		"/C/SVN/AuctivaCommerce/AucCom10035/Website/App_Themes/Carbon_Fibre_Black_v2/style.css",
+		"/C/SVN/AuctivaCommerce/AucCom10035/Website/App_Themes/Chrome_Garage_Black_v2/style.css",
+		"/C/SVN/AuctivaCommerce/AucCom10035/Website/Admin/Store/StoreSettings.aspx",
+		"/C/SVN/AuctivaCommerce/AucCom10035/Website/Conlib_v2/CategoryGrid5_v2.ascx",
+		"/C/SVN/AuctivaCommerce/AucCom10035/Website/App_Themes/April_Storm_Lavender_v2/style.css",
+		"/C/Dev/Paytiva/trunk/Freetiva/Website/js/sales/sales.js",
+		"/C/Dev/Paytiva/trunk/Freetiva/Website/js/sales/salesUtils.js",
+		"/C/Dev/Paytiva/trunk/Freetiva/Website/sales/saledetails_framed.aspx",
+		"/C/Dev/Paytiva/trunk/Freetiva/Website/js/sales/sales_framedpages_utils.js",
+		"/C/Users/jbagula/AppData/Roaming/Sublime Text 2/Packages/Terminal/Default (Windows).sublime-keymap",
+		"/C/Users/jbagula/AppData/Roaming/Sublime Text 2/Packages/SublimeLinter/Default (Windows).sublime-keymap",
+		"/C/wamp/www/chrometests/index.html",
+		"/C/Users/jbagula/AppData/Roaming/Sublime Text 2/Packages/ZenCoding/Default.sublime-keymap",
+		"/C/Users/jbagula/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/jbagula/AppData/Roaming/Sublime Text 2/Packages/ZenCoding/zen-coding.sublime-settings",
+		"/C/Users/jbagula/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/C/Dev/Paytiva/trunk/Freetiva/Website/sales/sales.aspx",
+		"/C/Dev/Paytiva/trunk/Freetiva/Website/help/help.css",
+		"/C/Dev/Paytiva/trunk/Freetiva/Website/help/ukwarning.aspx",
+		"/C/Dev/Paytiva/trunk/Freetiva/Website/Web.config",
+		"/C/inetpub/logs/LogFiles/W3SVC1/u_ex120723.log",
+		"/C/Dev/Paytiva/trunk/Freetiva/Website/help/tutorials.aspx",
+		"/C/Dev/Paytiva/trunk/Freetiva/Website/help/video.html",
+		"/C/wamp/bin/apache/Apache2.2.21/conf/httpd.conf",
+		"/C/wamp/bin/apache/Apache2.2.21/conf/extra/httpd-vhosts.conf",
+		"/C/Dev/Paytiva/trunk/Freetiva/Website/js/help/aucHelpModal.js",
+		"/C/Dev/Paytiva/trunk/Freetiva/Website/hostedimages/landing.aspx",
+		"/C/Dev/Paytiva/trunk/Freetiva/Website/hostedimages/landing.aspx.cs",
+		"/C/Dev/Paytiva/trunk/Freetiva/Website/js/windows.js",
+		"/C/Dev/Paytiva/trunk/Freetiva/Website/js/queryString.js",
+		"/C/Dev/Paytiva/trunk/Freetiva/Website/help/tutorial.aspx",
+		"/C/Users/jbagula/AppData/Roaming/Sublime Text 2/Packages/TortoiseSVN/README.md",
+		"/C/Users/jbagula/AppData/Roaming/Sublime Text 2/Packages/TortoiseSVN/TortoiseSVN.sublime-settings",
+		"/C/Users/jbagula/AppData/Roaming/Sublime Text 2/Packages/User/Fetch.sublime-settings",
+		"/C/Dev/Paytiva/trunk/Freetiva/Website/help/tutorials.aspx.cs",
+		"/C/Dev/Paytiva/trunk/Freetiva/Website/js/jquery/jquery.aucModal.js",
+		"/C/Dev/Paytiva/trunk/Freetiva/Website/js/msr/msrPage.js",
+		"/C/Users/jbagula/Desktop/auccom_promo_print.css",
+		"/C/Users/jbagula/Desktop/crawler.html",
+		"/C/Users/jbagula/Desktop/test.php",
+		"/C/Users/jbagula/Desktop/test.html"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"C:\\Dev\\Paytiva\\trunk\\Freetiva\\Website",
+			"C:\\Dev\\Paytiva\\trunk\\Freetiva\\Website\\js"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			".content",
+			".ico",
+			" ;",
+			"40px",
+			"60px",
+			"80px",
+			" ;",
+			"adjustIframeHeight",
+			"buildTransactionsHtml",
+			"buildDetailsHtml",
+			"div#pageWrap+ul",
+			"ul",
+			"inventoryPopUp",
+			"isLtIE9",
+			"iframeLoaded",
+			"window.",
+			"frameElement",
+			"setParentIframeHeight",
+			"inventory",
+			"getInventoryIconHtml",
+			"buildTransactionsHtml",
+			"inventory",
+			"faq",
+			"frameElement",
+			"iframeLoaded",
+			"window",
+			"windowpopup",
+			"click",
+			"a_2",
+			"videoTu",
+			"vidTu",
+			"aucHelpModal",
+			"modalShow",
+			"aucModal"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "Main.sublime-menu",
+					"settings":
+					{
+						"buffer_size": 1576,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								281,
+								281
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": false,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"app_theme/mobile",
+				"App_Themes/Mobile_Gray_v2/mobile.css"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 360.0,
+	"status_bar_visible": false
+}
