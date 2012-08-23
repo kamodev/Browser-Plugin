@@ -24,6 +24,7 @@ def getExtList():
     return ('.php','.html','.htm','.jsp','.cfm','.aspx','.asp','.xhtml')
 
 
+# Open page in new browser
 class OpenInNewBrowserWindowCommand(sublime_plugin.TextCommand):
   def run(self, edit):
 
@@ -36,7 +37,10 @@ class OpenInNewBrowserWindowCommand(sublime_plugin.TextCommand):
 
     # Check to see if the file can be displayed in the browser
     if self.view.file_name().endswith(getExtList()):
-        webbrowser.open(url)
+        if os.platform == "win32":
+            print "Need to fix the error with windows"
+        else:
+            webbrowser.open(url)
     else:
         print "\nThis is not a browsable file\n"
 
@@ -52,6 +56,9 @@ class OpenInNewTabCommand(sublime_plugin.TextCommand):
 
     # Check to see if the file can be displayed in the browser
     if self.view.file_name().endswith(getExtList()):
-        webbrowser.open_new_tab(url)
+        if os.platform == "win32":
+            print "Need to fix the error with windows"
+        else:            
+            webbrowser.open_new_tab(url)
     else:
         print "\nThis is not a browsable file\n"
