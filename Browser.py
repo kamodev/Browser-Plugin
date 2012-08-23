@@ -17,8 +17,8 @@ def saveFile():
 def getDomainConfig():
     return sublime.load_settings(SETTINGS).get('domains', {})
 
-def getFileName(self):
-    return self.view.file_name()[16:len(self.view.file_name())]
+# def getFileName(self):
+    # return self.view.file_name()[16:len(self.view.file_name())]
 
 def getExtList():
     return ('.php','.html','.htm','.jsp','.cfm','.aspx','.asp','.xhtml')
@@ -26,18 +26,18 @@ def getExtList():
 
 # Open page in new browser
 class OpenInNewBrowserWindowCommand(sublime_plugin.TextCommand):
-  def run(self, edit):
-
+  def run(self, view, args):
+    
     # Save the changes to the browser
     saveFile()
 
     # Get the domain to open
     for title, domain in getDomainConfig().items():
-        url = domain + getFileName(self)
+        url = domain + self.view.file_name()[16:len(self.view.file_name())]
 
     # Check to see if the file can be displayed in the browser
     if self.view.file_name().endswith(getExtList()):
-        if os.platform == "win32":
+        if sys.platform == "win32":
             print "Need to fix the error with windows"
         else:
             webbrowser.open(url)
@@ -56,7 +56,7 @@ class OpenInNewTabCommand(sublime_plugin.TextCommand):
 
     # Check to see if the file can be displayed in the browser
     if self.view.file_name().endswith(getExtList()):
-        if os.platform == "win32":
+        if sys.platform == "win32":
             print "Need to fix the error with windows"
         else:            
             webbrowser.open_new_tab(url)

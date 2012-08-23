@@ -7,5 +7,5 @@ Version History
 
 v1.0.0:
 - Has to basic commands for opening in a new tab or in a new browser window.
--- Open in new browser window is : ctrl + shift + b
--- Open in new browser tab is : ctrl + shift + t
+- Open in new browser window is : ctrl + shift + b
+- Open in new browser tab is : ctrl + shift + t
