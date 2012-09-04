@@ -37,8 +37,8 @@ class OpenInNewBrowserWindowCommand(sublime_plugin.TextCommand):
 
     # Check to see if the file can be displayed in the browser
     if self.view.file_name().endswith(getExtList()):
-        if sys.platform == "win32":
-            print "Need to fix the error with windows"
+        if sys.platform == "win32":            
+            os.system("open" + str(url))
         else:
             webbrowser.open(url)
     else:
@@ -57,7 +57,7 @@ class OpenInNewTabCommand(sublime_plugin.TextCommand):
     # Check to see if the file can be displayed in the browser
     if self.view.file_name().endswith(getExtList()):
         if sys.platform == "win32":
-            print "Need to fix the error with windows"
+            os.system("open" + str(url))
         else:            
             webbrowser.open_new_tab(url)
     else:
