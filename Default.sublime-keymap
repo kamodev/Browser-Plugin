@@ -1,4 +1,0 @@
-[
-  { "keys": ["ctrl+shift+b"], "command": "open_in_new_browser_window" },
-  { "keys": ["ctrl+shift+t"], "command": "open_in_new_tab" }
-]
