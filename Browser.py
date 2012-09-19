@@ -1,10 +1,6 @@
 import sublime
 import sublime_plugin
 import webbrowser
-import os
-import sys
-import platform
-
 
 # Constant of settings file
 SETTINGS = "browser.sublime-settings"
@@ -31,7 +27,7 @@ class BrowserManager():
         return ('.php','.html','.htm','.jsp','.cfm','.aspx','.asp','.xhtml')
     
 # Open page in new browser
-class OpenInNewBrowserWindowCommand(sublime_plugin.WindowCommand):
+class OpenInBrowserCommand(sublime_plugin.WindowCommand):
   
     def run(self):
 
@@ -39,6 +35,7 @@ class OpenInNewBrowserWindowCommand(sublime_plugin.WindowCommand):
 
         # Save the changes to the browser
         self.manager.saveFile()
+        self.browserList = ["Internet Explorer", "FireFox", "Chrome", "Opera", "Safari"]
 
         # Get the domain to open
         for title, domain in self.manager.getDomainConfig().items():
@@ -56,7 +53,7 @@ class OpenInNewBrowserWindowCommand(sublime_plugin.WindowCommand):
   
 # Add domain to the settings file
 class AddDomainCommand(sublime_plugin.WindowCommand):
-      
+    
     def run(self):
         self.manager = BrowserManager()
         self.domSettings = self.manager.getSettings()
@@ -66,40 +63,10 @@ class AddDomainCommand(sublime_plugin.WindowCommand):
         self.window.show_input_panel("Enter Domain:",'', lambda txt: self.addDomain(txt),None,None)
 
     def addDomain(self, dom):
-        #print "\n\n\nUser entered: " + dom + "\n\n\n"
         self.domainName = dom
         self.window.show_input_panel("Enter Domain Type:",'', lambda txt: self.addDomainType(txt),None,None)
-        # self.currWin.show_quick_panel(["Test", "Mobile", "Paytiva"], None)
 
     def addDomainType(self, domType):
         self.domainType = domType
-        #print "\n\n\nUser domain type entered: " + domType + "\n\n\n"
         self.domains[self.domainType] = self.domainName
-        
-        # Print the domains
-        # for title, domain in self.domains.items():
-        #    print title + ":" + domain
-
         self.domSettings.set('domains', self.domains)
-
-        
-
-       
-class OpenInNewTabCommand(sublime_plugin.TextCommand):
-  def run(self, edit):
-
-    # Save the changes to the browser
-    BrowserManager.saveFile()
-
-    # Get the domain to open
-    for title, domain in BrowserManager.getDomainConfig().items():
-        url = domain + BrowserManager.getFileName(self)
-
-    # Check to see if the file can be displayed in the browser
-    if self.view.file_name().endswith(BrowserManager.getExtList()):
-        if sys.platform == "win32":
-            print "Need to fix the error with windows"
-        else:            
-            webbrowser.open_new_tab(url)
-    else:
-        print "\nThis is not a browsable file\n"
