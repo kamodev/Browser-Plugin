@@ -3,7 +3,7 @@ import sublime_plugin
 import webbrowser
 
 # Constant of settings file
-SETTINGS = "browser.sublime-settings"
+SETTINGS = "Browser.sublime-settings"
 
 # The Browser Manager
 class BrowserManager():
@@ -35,7 +35,13 @@ class OpenInBrowserCommand(sublime_plugin.WindowCommand):
 
         # Save the changes to the browser
         self.manager.saveFile()
+                
+        print "File saved\n"
+
         self.browserList = ["Internet Explorer", "FireFox", "Chrome", "Opera", "Safari"]
+        self.window.show_quick_panel(self.browserList, None)
+
+        print sublime.platform()
 
         # Get the domain to open
         for title, domain in self.manager.getDomainConfig().items():
@@ -44,7 +50,7 @@ class OpenInBrowserCommand(sublime_plugin.WindowCommand):
 
         # Check to see if the file can be displayed in the browser
         if self.window.active_view().file_name().endswith(self.manager.getExtList()):
-            if sublime.platform == "windows":
+            if sublime.platform() == "windows":
                 webbrowser.get('windows-default').open(url)
             else:
                 webbrowser.open(url)
