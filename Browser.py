@@ -30,7 +30,8 @@ class BrowserManager():
 class OpenInBrowserCommand(sublime_plugin.WindowCommand):
   
     def run(self):
-
+        
+        # Create a new manager object
         self.manager = BrowserManager()
 
         # Save the changes to the browser
